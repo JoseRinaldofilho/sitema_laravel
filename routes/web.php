@@ -21,3 +21,9 @@ Route::get('/principal', [App\Http\Controllers\PrincipalController::class, 'inde
 Route::get('/contato', [App\Http\Controllers\ContatolController::class, 'index']);
 Route::get('/inicio', [App\Http\Controllers\inicioController::class, 'index']);
 
+Route::get('inicio/{id}', function (string $id) {
+    return "O id corresponde a : {$id}";
+});
+
+
+
