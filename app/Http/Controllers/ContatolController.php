@@ -8,6 +8,6 @@ class ContatolController extends Controller
 {
     public function index()
     {
-        echo "teste Contato Controller index";
+       return view('contato/index');
     }
 }
