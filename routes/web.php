@@ -29,7 +29,14 @@ Route::prefix('app')->group(function () {
     Route::get('/fornecedores',function(){    return ('fornecedores');})->name('app.fornecedores');
     Route::get('/produtos',function(){    return ('produtos');})->name('app.produtos');
 });
-
+// redicionamento de Route
+Route::get('/rota1',function(){
+   return 'rota1';
+})->name('site.rota1');
+//digita rota 2 e retora rota1 com o apelido site.rota1
+Route::get('/rota2',function(){
+   return redirect()->route('site.rota1');
+})->name('site.rota2');
 
 
 
