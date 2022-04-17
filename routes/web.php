@@ -42,6 +42,9 @@ Route::fallback(function(){
     echo  "Pagina não encontrada. <a href='/'>Voltar</a>";
 });
 Route::get('/teste/{id?}/{nome}', [\App\Http\Controllers\TesteController::class,'index'])->name('teste.index');
+// fornecedores]
+Route::get('/fornecedores', [\App\Http\Controllers\FornecedoresController::class,'index'])->name('fornecedores.index');
+
 
 
 
