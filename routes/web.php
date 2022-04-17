@@ -38,6 +38,11 @@ Route::get('/rota2',function(){
    return redirect()->route('site.rota1');
 })->name('site.rota2');
 
+Route::fallback(function(){
+    echo  "Pagina não encontrada. <a href='/'>Voltar</a>";
+});
+Route::get('/teste/{id?}/{nome}', [\App\Http\Controllers\TesteController::class,'index'])->name('teste.index');
+
 
 
 
