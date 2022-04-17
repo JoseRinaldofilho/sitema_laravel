@@ -15,7 +15,7 @@
             <a href="/">Principal</a>
         </li>
         <li>
-            <a href="/inicio">inicio</a>
+            <a href="{{ route('site.inicio') }}">inicio</a>
         </li>
         <li>
             <a href="/contato">Contato</a>
